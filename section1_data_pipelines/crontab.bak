@@ -1,0 +1,1 @@
+0 1 * * * cd /Users/kiansiong/ks_projects/dsaid_dataeng/section1_data_pipelines && ./run.sh
