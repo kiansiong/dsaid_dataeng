@@ -5,6 +5,8 @@
 1. Ensure that environment is setup and dependencies in requirements.txt (in parent directory) are installed.
 2. Download repository
 3. Run `chmod 750 setup.sh` followed by `./setup.sh`
+4. In `run.sh` file, replace the python command with the full path of your python installation.
+
 
 ## Crontab setup
 Step to setup Crontab is out of the scope for this guide.
