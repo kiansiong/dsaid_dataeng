@@ -1,6 +1,7 @@
 import os
 import pandas as pd
 from nameparser import HumanName
+from datetime import date
 
 
 def split_name(name):
@@ -31,6 +32,9 @@ if __name__ == "__main__":
     data_output_path = 'processed'
     file_list = os.listdir(os.getcwd() + data_input_path)
 
+    # Get current date
+    dt_str = date.today().strftime("%Y%m%d")
+
     for f in file_list:
         if f.endswith('.csv'):
             print("Processing file ", f)
@@ -38,7 +42,7 @@ if __name__ == "__main__":
             df = process_dataset(df)
 
             f_name = os.path.splitext(f)[0]
-            f_output_name = f_name+'_cleaned'+'.csv'
+            f_output_name = '{}_cleaned_{}.csv'.format(f_name, dt_str)
             f_output = os.path.join(data_output_path, f_output_name)
             df.to_csv(f_output, index=False)
 
