@@ -20,4 +20,4 @@ The program takes any `.csv` files dropped into this folder for processing.
 
 ## Output folder
 Processed files will be dropped in the `/processed` folder with the following naming convention:
-    `<original file name>_cleaned.csv`
+    `<original file name>_cleaned_<datestamp>.csv`
