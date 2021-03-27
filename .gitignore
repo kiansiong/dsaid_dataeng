@@ -132,9 +132,6 @@ dmypy.json
 # Excel Files
 *.xlsx
 
-# Data folder
-data/
-
 # Local folder
 local/
 
